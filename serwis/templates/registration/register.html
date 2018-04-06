@@ -1,0 +1,14 @@
+{% extends "newsy/base2.html" %}
+
+{% block content %}
+
+	<h2>Register</h2>
+	
+	
+	<form action="/accounts/register/" method="post">{% csrf_token %}
+	{{form}}<br>	
+	<input type="submit" value="Register" />
+	
+	</form>
+
+{% endblock %}
